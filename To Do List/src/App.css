@@ -1,0 +1,138 @@
+body {
+
+    background-color: blueviolet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+
+h1
+{
+  font-family: sans-serif;
+  font-weight: 100;
+  color: white;
+  margin-top: 8%;
+  font-size: 35px;
+  margin-bottom: 10%;
+  text-align: center;
+}
+
+.To_Do_Form
+{
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(69, 37, 99);
+  height: 97vh;
+  width: 90vh;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  border-color: rgba(255, 255, 255, 0.548);
+}
+
+.Two_parts
+{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.Upper_part
+{
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+}
+
+.Input_one
+{
+  border-style: solid;
+  border-color: blueviolet;
+  border-radius: 9px 0px 0px 9px;
+  border-width: 1px;
+  padding: 15px;
+  background-color: rgba(223, 0, 0, 0);
+  outline: none;
+  width: 70%;
+  color: rgba(255, 255, 255, 0.658);
+  font-size: 15px;
+}
+
+.Input_one::placeholder {
+  color: #ffffff4d;
+}
+
+.Add_task
+{
+  border-color: blueviolet;
+  border-radius: 0px 9px 9px 0px;
+  border-width: 1px;
+  padding: 15px;
+  background-color: rgb(152, 68, 230);
+  width: 30%;
+  color: rgba(255, 255, 255, 0.829);
+  cursor: pointer;
+}
+
+
+
+.Lower_part
+{
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 7%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(104, 72, 134, 0);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Todo_class
+{
+  height: 85%;
+  width: 98%;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  background-color: rgba(142, 63, 216, 0.61);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 2%;
+  border-color: rgba(255, 255, 255, 0.39);
+}
+
+p
+{
+  font-family: sans-serif;
+  margin-left: 0%;
+  font-size: 16px;
+  font-weight: 100;
+  color: rgba(255, 255, 255, 0.733);
+}
+
+.Icons
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  width: 50%;
+  height: 50%;
+}
+
+.ico{
+  margin-left: 8%;
+  color: rgba(255, 255, 255, 0.842);
+  cursor: pointer;
+}
