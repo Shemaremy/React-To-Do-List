@@ -13,8 +13,9 @@ const TodoWrapper = () => {
 
 
   return (
-    <div>
-        <TheForm   addTodo = {addTodo} />       
+    <div className='Everything'>
+        <TheForm   addTodo = {addTodo} />
+        <Todocomponent/>
     </div>
 
   );

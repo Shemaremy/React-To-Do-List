@@ -34,9 +34,7 @@ const TheForm = ({addTodo}) => {
                
                 <button className='Add_task'>Add</button>
             </div>
-            <div className='Lower_part'>
-                <Todocomponent/>
-            </div>
+            
 
         </div>
     </form>
