@@ -63,6 +63,20 @@ h1
   font-size: 15px;
 }
 
+.Another
+{
+  border-style: solid;
+  border-color: rgb(43, 226, 73);
+  border-radius: 25px 0px 0px 25px;
+  border-width: 1px;
+  padding: 15px;
+  background-color: rgba(45, 223, 0, 0.068);
+  outline: none;
+  width: 70%;
+  color: rgba(255, 255, 255, 0.658);
+  font-size: 15px;
+}
+
 .Input_one::placeholder {
   color: #ffffff4d;
 }
@@ -77,6 +91,14 @@ h1
   width: 30%;
   color: rgba(255, 255, 255, 0.829);
   cursor: pointer;
+}
+
+.Another2
+{
+  border-color: rgb(43, 226, 73);
+  background-color: rgba(43, 226, 73, 0.404);
+  border-left: none;
+  border-radius: 0px 25px 25px 0px;
 }
 
 
@@ -111,11 +133,18 @@ h1
   border-color: rgba(255, 255, 255, 0.39);
 }
 
+.Word_container
+{
+  padding-left: 0%;
+  width: 80%;
+}
+
 p
 {
+  word-wrap: break-word;
   font-family: sans-serif;
-  margin-left: 0%;
-  font-size: 16px;
+  margin-left: 2%;
+  font-size: 14px;
   font-weight: 100;
   color: rgba(255, 255, 255, 0.733);
 }
@@ -124,9 +153,9 @@ p
 {
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
-  width: 50%;
+  width: 20%;
   height: 50%;
 }
 
