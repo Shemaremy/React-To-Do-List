@@ -22,18 +22,41 @@ const TodoWrapper = () => {
 
 
 
-     const editTodo = id => {
-      setTodos(todos.map( todo => todo.id === id ?{...todo, isEditing: !todo.isEditing}: todo ));
-     }
+     const editTodo = id => {                         // Function declaration with id as an argument
+        const updatedTodos = todos.map(todo => {
+          if (todo.id === id) {
+            return { ...todo, isEditing: !todo.isEditing };
+          } else {
+            return todo;
+          }
+        });
+      
+        setTodos(updatedTodos);
+      }
+    
 
      const deleteTodo = id => {
-      setTodos(todos.filter(todo => todo.id !== id));
+      setTodos(todos.filter(todo => {
+        if (todo.id !== id) {
+          return true;
+        } else {
+          return false;
+        }
+      }));
      }
+    
 
 
      const editTask = (task, id) => {
-      setTodos(todos.map(todo => todo.id === id ? {...todo, task, isEditing: !todo.isEditing} : todo))
-     }
+      setTodos(todos.map(todo => {
+        if (todo.id === id) {
+          return {...todo, task, isEditing: !todo.isEditing};
+        } else {
+          return todo;
+        }
+      }));
+    }
+    
 
 
 
@@ -42,12 +65,19 @@ const TodoWrapper = () => {
   return (
     <div className='Everything'>
       <h1>Get Things Done Today !!</h1>
-        <TheForm   addTodo = {addTodo} />
 
-        {todos.map((todo, index) => (
-          todo.isEditing? (<EditTheForm editTodo = {editTask} task={todo} />) : (<Todocomponent task={todo} key ={index}  editTodo={editTodo}  deleteTodo={deleteTodo} />)
+        <TheForm   Flacko = {addTodo} />
 
-        ))}
+
+        {todos.map((todo, index) => {
+            if (todo.isEditing) {
+              return <EditTheForm editTodo={editTask} task={todo} />;
+            } else {
+              return <Todocomponent Flacko2={todo} key={index} editTodo={editTodo} deleteTodo={deleteTodo} />;
+            }
+          })
+        }
+
         
     </div>
 

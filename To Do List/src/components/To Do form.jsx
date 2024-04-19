@@ -1,9 +1,8 @@
 
 import React, {useState} from 'react';
-import Todocomponent from './Todo';
 
 
-const TheForm = ({addTodo}) => {                    // The function containing everything with a function addTodo to be passed as a prop. (Remember that props are passed as objects)
+const TheForm = ({Flacko}) => {                    // The function containing everything with a function addTodo to be passed as a prop. (Remember that props are passed as objects)
 
     const [value, setValue] = useState("");         // Initially, the value is empty
 
@@ -14,7 +13,7 @@ const TheForm = ({addTodo}) => {                    // The function containing e
         if (value === "") {
             alert("No item entered")
         } else {
-            addTodo(value);                        // Calling the function addTodo that we saw above and passing the value as its argument. Helping the parent class to know the value
+            Flacko(value);                        // Calling the function addTodo that we saw above and passing the value as its argument. Helping the parent class to know the value
             setValue(""); // Clear input value
         } 
 

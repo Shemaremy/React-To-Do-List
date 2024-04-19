@@ -66,8 +66,8 @@ h1
 .Another
 {
   border-style: solid;
-  border-color: rgb(43, 226, 73);
-  border-radius: 25px 0px 0px 25px;
+  border-color: blueviolet;
+  border-radius: 15px 0px 0px 15px;
   border-width: 1px;
   padding: 15px;
   background-color: rgba(45, 223, 0, 0.068);
@@ -75,6 +75,7 @@ h1
   width: 70%;
   color: rgba(255, 255, 255, 0.658);
   font-size: 15px;
+  margin-top: 2%;
 }
 
 .Input_one::placeholder {
@@ -95,10 +96,11 @@ h1
 
 .Another2
 {
-  border-color: rgb(43, 226, 73);
-  background-color: rgba(43, 226, 73, 0.404);
+  border-color: blueviolet;
+  background-color: rgba(137, 43, 226, 0.644);
   border-left: none;
-  border-radius: 0px 25px 25px 0px;
+  border-radius: 0px 15px 15px 0px;
+  margin-top: 2%;
 }
 
 
