@@ -6,7 +6,7 @@ import { faTrash } from '@fortawesome/free-solid-svg-icons';
 
 
 
-const Todocomponent = ({Flacko2, deleteTodo, editTodo}) => {
+function Todocomponent ({Flacko2, deleteTodo, editTodo}) {
 
 
     return(

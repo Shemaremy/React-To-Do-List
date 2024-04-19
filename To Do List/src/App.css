@@ -54,6 +54,7 @@ h1
   border-style: solid;
   border-color: blueviolet;
   border-radius: 9px 0px 0px 9px;
+  border-right: none;
   border-width: 1px;
   padding: 15px;
   background-color: rgba(223, 0, 0, 0);
@@ -68,6 +69,7 @@ h1
   border-style: solid;
   border-color: blueviolet;
   border-radius: 15px 0px 0px 15px;
+  border-right: none;
   border-width: 1px;
   padding: 15px;
   background-color: rgba(45, 223, 0, 0.068);

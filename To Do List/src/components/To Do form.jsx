@@ -2,23 +2,36 @@
 import React, {useState} from 'react';
 
 
-const TheForm = ({Flacko}) => {                    // The function containing everything with a function addTodo to be passed as a prop. (Remember that props are passed as objects)
+function TheForm ({Flacko}){                  
 
-    const [value, setValue] = useState("");         // Initially, the value is empty
+    const [value, setValue] = useState("");
 
-    const handleSubmit = e => {                     // A function which will be called after a form is submitted. Takes event object e as a parameter
-        e.preventDefault();                         // Preventdefault method prevents the page auto reload default behaviour
-        
+
+
+    // A function which will be called after a form is submitted. Takes event object e as a parameter
+    function handleSubmit(e) {
+        e.preventDefault();                         // Preventdefault method prevents the page auto reload default behaviour      
 
         if (value === "") {
             alert("No item entered")
         } else {
-            Flacko(value);                        // Calling the function addTodo that we saw above and passing the value as its argument. Helping the parent class to know the value
+            Flacko(value);
             setValue(""); // Clear input value
         } 
 
         
     }
+
+
+
+
+    //Ensures that value always holds the latest value entered by the user, and it's used later when the form is submitted.
+    function X (e){
+        setValue(e.target.value)
+    }
+
+
+
 
   return (
     <form className="To_Do_Form" onSubmit={handleSubmit}>       
@@ -27,7 +40,7 @@ const TheForm = ({Flacko}) => {                    // The function containing ev
             <div className='Upper_part'>
 
                 <input type="text" className="Input_one" placeholder='Whats yo plans today ?' 
-                onChange={(e)=>setValue(e.target.value)}
+                onChange={X}
                 value={value}></input>
 
                

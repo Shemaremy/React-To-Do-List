@@ -3,24 +3,27 @@ import React, {useState} from 'react';
 import Todocomponent from './Todo';
 
 
-const EditTheForm = ({editTodo, task}) => {                    // The function containing everything with a function addTodo to be passed as a prop. (Remember that props are passed as objects)
+function EditTheForm ({editTodo, task}) {                  
 
-    const [value, setValue] = useState(task.task);         // Initially, the value is empty
+    const [value, setValue] = useState(task.task);    
 
-    const handleSubmit = e => {                     // A function which will be called after a form is submitted. Takes event object e as a parameter
-        e.preventDefault();                         // Preventdefault method prevents the page auto reload default behaviour
+
+    function handleSubmit (e) { 
+        e.preventDefault();                
         
 
         if (value === "") {
             alert("Didn't update yo task")
         } else {
-            editTodo(value, task.id);                        // Calling the function addTodo that we saw above and passing the value as its argument. Helping the parent class to know the value
+            editTodo(value, task.id);                       
             setValue(""); // Clear input value
         } 
-
         
     }
 
+
+
+    
   return (
     <form className="To_Do_Form" onSubmit={handleSubmit}>       
         <div className='Two_parts'>
@@ -29,7 +32,6 @@ const EditTheForm = ({editTodo, task}) => {                    // The function c
                 <input type="text" className="Input_one Another" placeholder='Update task' 
                 onChange={(e)=>setValue(e.target.value)}
                 value={value}></input>
-
                
                 <button type='submit' className='Add_task Another2'>Update Task</button>
             </div>
