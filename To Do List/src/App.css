@@ -1,3 +1,4 @@
+
 body {
 
     background-color: blueviolet;
@@ -5,6 +6,44 @@ body {
     justify-content: center;
     align-items: center;
     height: 100%;
+    width: 100vw;
+    overflow-x: hidden;
+
+
+    @media (max-width: 767px)  {
+      overflow-x: hidden;
+      width: 95%;
+    }
+    
+}
+
+
+
+.Everything
+{
+  height: 97vh;
+  margin: 0 auto;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(104, 72, 134, 0);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background-color: rgb(69, 37, 99);
+  width: 90vh;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  border-color: rgba(255, 255, 255, 0.548);
+  margin: 0 auto;
+  
+  @media (max-width: 767px)     /* Mobile devices */
+  {
+    width: 90vw;
+    overflow-x: hidden;
+  }
 }
 
 
@@ -17,6 +56,11 @@ h1
   font-size: 30px;
   margin-bottom: 10%;
   text-align: center;
+
+  @media (max-width: 640px)  {
+    font-size: 25px;
+  }
+
 }
 
 .To_Do_Form
@@ -30,6 +74,10 @@ h1
   border-style: solid;
   border-width: 0px;
   border-radius: 5px;
+
+  @media (max-width: 767px)  {
+    width: 100%;
+  }
 }
 
 .Two_parts
@@ -62,6 +110,14 @@ h1
   width: 70%;
   color: rgba(255, 255, 255, 0.658);
   font-size: 15px;
+}
+
+.Every_Todo
+{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .Another
@@ -103,6 +159,7 @@ h1
   border-left: none;
   border-radius: 0px 15px 15px 0px;
   margin-top: 2%;
+
 }
 
 
@@ -171,38 +228,3 @@ p
 
 
 
-
-
-
-
-
-
-
-.Every_Todo
-{
-  width: 90vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-
-.Everything
-{
-  height: 97vh;
-  margin: 0 auto;
-  border-style: solid;
-  border-width: 1px;
-  border-color: rgba(104, 72, 134, 0);
-  border-radius: 8px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-  background-color: rgb(69, 37, 99);
-  width: 90vh;
-  border-style: solid;
-  border-width: 1px;
-  border-radius: 5px;
-  border-color: rgba(255, 255, 255, 0.548);
-}
