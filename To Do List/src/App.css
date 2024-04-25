@@ -41,7 +41,7 @@ body {
   
   @media (max-width: 767px)     /* Mobile devices */
   {
-    width: 90vw;
+    width: 100vw;
     overflow-x: hidden;
   }
 }
